@@ -1,25 +1,67 @@
 {
   "expo": {
-    "name": "poultry-mobile",
+    "name": "Daily Poultry",
     "slug": "poultry-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#166534",
+    "primaryColor": "#166534",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#166534"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "backgroundColor": "#166534",
+      "splash": {
+        "image": "./assets/logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#166534"
+      }
     },
     "android": {
+      "package": "com.broilix.app",
+      "backgroundColor": "#166534",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#166534",
+        "foregroundImage": "./assets/logo.png"
+      },
+      "splash": {
+        "image": "./assets/logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#166534"
       },
       "predictiveBackGestureEnabled": false
     },
+    "androidStatusBar": {
+      "backgroundColor": "#166534",
+      "barStyle": "light-content",
+      "translucent": false
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#166534",
+      "barStyle": "light-content"
+    },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/logo.png"
+    },
+    "plugins": [
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#166534",
+          "image": "./assets/logo.png",
+          "dark": {
+            "backgroundColor": "#166534",
+            "image": "./assets/logo.png"
+          },
+          "imageWidth": 260
+        }
+      ]
+    ]
   }
 }
